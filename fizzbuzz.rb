@@ -1,9 +1,13 @@
 def fizzbuzz(int)
   if int % 3 == 0
-    "Fizz"
+
+    fizzbuzz(3).to eq("Fizz")
+
   end
 
   if int % 5 == 0
-    "Buzz"
+
+    fizzbuzz(5).to eq("Buzz")
+
   end
 end
